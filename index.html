@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Answering Interface</title>
+</head>
+<body>
+    <h1>Question Answering Interface</h1>
+    <form action="/ask" method="post">
+        <label for="question">Ask a question:</label><br>
+        <input type="text" id="question" name="question"><br>
+        <label for="urls">Enter URLs (one per line):</label><br>
+        <textarea id="urls" name="urls" rows="4" cols="50">
+https://en.wikipedia.org/wiki/Bill_Gates
+        </textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="answer"></div>
+</body>
+</html>
